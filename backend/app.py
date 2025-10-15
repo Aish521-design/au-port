@@ -4,6 +4,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from routers import auth, users, courses, uploads, feedback, quality, health, dashboard,clo_alignment,course_clo
 from core.schema_guard import ensure_all_tables_once
 from routers import student_feedback
+# app.py (very top)
+from dotenv import load_dotenv
+load_dotenv()
+
 
 app = FastAPI(title="Air QA Backend")
 
